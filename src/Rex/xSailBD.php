@@ -1,6 +1,6 @@
 <?php
 
-namespace Phpblaze\Phpblaze\Rex;
+namespace Phpblaze\Bladelib\Rex;
 
 use Illuminate\Foundation\Http\FormRequest;
 

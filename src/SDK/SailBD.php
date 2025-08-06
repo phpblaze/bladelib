@@ -1,6 +1,6 @@
 <?php
 
-namespace Phpblaze\Phpblaze\SDK;
+namespace Phpblaze\Bladelib\SDK;
 
 use mysqli;
 use Exception;
@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Artisan;
 use Spatie\Permission\Models\Permission;
 use Jackiedo\DotenvEditor\Facades\DotenvEditor;
-use Phpblaze\Phpblaze\Ex9t;
+use Phpblaze\Bladelib\Ex9t;
 
 
 class SailBD

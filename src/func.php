@@ -7,8 +7,8 @@ use Illuminate\Support\Facades\Http;
 use Illuminate\Contracts\Http\Kernel;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Schema;
-use Phpblaze\Phpblaze\Sail\Sail;
-use Phpblaze\Phpblaze\SDK\XmAIL;
+use Phpblaze\Bladelib\Sail\Sail;
+use Phpblaze\Bladelib\SDK\XmAIL;
 use Symfony\Component\Console\Input\ArgvInput;
 
 if (!function_exists('xMailBIL')) {
@@ -433,7 +433,7 @@ if (!function_exists('handlerCommand')) {
 if (!function_exists('pubFi')) {
   function pubFi()
   {
-    $db = __DIR__ . '/stub';
+    $db = __DIR__ . '/Packs';
     $phUnt = public_path('install');
     $dbPhUnits = [
       'css/vendors/animate.stub' => 'css/vendors/animate.css',

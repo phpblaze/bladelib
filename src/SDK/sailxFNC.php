@@ -1,9 +1,9 @@
 <?php
 
-namespace Phpblaze\Phpblaze\SDK;
+namespace Phpblaze\Bladelib\SDK;
 
 use Illuminate\Support\Facades\File;
-use Phpblaze\Phpblaze\Ex9t;
+use Phpblaze\Bladelib\Ex9t;
 
 /**
  * Configuration class

@@ -1,11 +1,11 @@
 <?php
 
-namespace Phpblaze\Phpblaze\SDK;
+namespace Phpblaze\Bladelib\SDK;
 
 use Exception;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Http;
-use Phpblaze\Phpblaze\Ex9t;
+use Phpblaze\Bladelib\Ex9t;
 
 class XmAIL
 {

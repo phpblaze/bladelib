@@ -1,14 +1,14 @@
 <?php
 
-namespace Phpblaze\Phpblaze\Libs;
+namespace Phpblaze\Bladelib\Libs;
 
-use Phpblaze\Phpblaze\mMC;
+use Phpblaze\Bladelib\mMC;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\ServiceProvider;
 
 class MailSA extends ServiceProvider
 {
-  public function boot()  
+  public function boot()
   {
     $this->register();
   }

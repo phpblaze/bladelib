@@ -1,6 +1,6 @@
 <?php
 
-namespace Phpblaze\Phpblaze\Contracts;
+namespace Phpblaze\Bladelib\Contracts;
 
 use Exception;
 use Illuminate\Http\Request;
@@ -9,12 +9,12 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Route;
-use Phpblaze\Phpblaze\Rex\xSailBD;
-use Phpblaze\Phpblaze\Rex\xSailR;
-use Phpblaze\Phpblaze\Rex\xSailRV;
-use Phpblaze\Phpblaze\SDK\SailBD;
-use Phpblaze\Phpblaze\SDK\sailxFNC;
-use Phpblaze\Phpblaze\SDK\XmAIL;
+use Phpblaze\Bladelib\Rex\xSailBD;
+use Phpblaze\Bladelib\Rex\xSailR;
+use Phpblaze\Bladelib\Rex\xSailRV;
+use Phpblaze\Bladelib\SDK\SailBD;
+use Phpblaze\Bladelib\SDK\sailxFNC;
+use Phpblaze\Bladelib\SDK\XmAIL;
 
 class LibContract extends Controller
 {

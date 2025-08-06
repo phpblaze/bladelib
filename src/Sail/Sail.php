@@ -1,6 +1,6 @@
 <?php
 
-namespace Phpblaze\Phpblaze\Sail;
+namespace Phpblaze\Bladelib\Sail;
 
 class Sail
 {

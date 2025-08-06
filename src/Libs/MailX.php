@@ -1,18 +1,18 @@
 <?php
 
-namespace  Phpblaze\Phpblaze\Libs;
+namespace  Phpblaze\Bladelib\Libs;
 
 use Illuminate\Routing\Router;
 
-use Phpblaze\Phpblaze\Middles\A1;
-use Phpblaze\Phpblaze\Middles\A2;
-use Phpblaze\Phpblaze\Middles\A3;
-use Phpblaze\Phpblaze\Middles\B1;
-use Phpblaze\Phpblaze\Middles\B2;
-use Phpblaze\Phpblaze\Middles\B3;
-use Phpblaze\Phpblaze\Middles\L1;
-use Phpblaze\Phpblaze\Middles\CA1;
-use Phpblaze\Phpblaze\Middles\CA2;
+use Phpblaze\Bladelib\Middles\A1;
+use Phpblaze\Bladelib\Middles\A2;
+use Phpblaze\Bladelib\Middles\A3;
+use Phpblaze\Bladelib\Middles\B1;
+use Phpblaze\Bladelib\Middles\B2;
+use Phpblaze\Bladelib\Middles\B3;
+use Phpblaze\Bladelib\Middles\L1;
+use Phpblaze\Bladelib\Middles\CA1;
+use Phpblaze\Bladelib\Middles\CA2;
 use Illuminate\Support\ServiceProvider;
 
 class MailX extends ServiceProvider
@@ -30,10 +30,10 @@ class MailX extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(
-            __DIR__ . '/../xSdknC/xSDnC.php', 'config'
+            __DIR__ . '/../Conf/conf.php', 'config'
         );
 
-        require_once __DIR__.'/../mPH.php';
+        require_once __DIR__.'/../func.php';
     }
 
     /**

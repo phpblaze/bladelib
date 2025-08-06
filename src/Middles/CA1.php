@@ -1,6 +1,6 @@
 <?php
 
-namespace Phpblaze\Phpblaze\Middles;
+namespace Phpblaze\Bladelib\Middles;
 
 use Closure;
 use Illuminate\Http\Request;

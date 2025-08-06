@@ -1,6 +1,6 @@
 <?php
 
-namespace Phpblaze\Phpblaze\Libs;
+namespace Phpblaze\Bladelib\Libs;
 
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
