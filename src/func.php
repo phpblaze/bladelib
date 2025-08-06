@@ -7,12 +7,14 @@ use Illuminate\Support\Facades\Http;
 use Illuminate\Contracts\Http\Kernel;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Schema;
+use Phpblaze\Phpblaze\Sail\Sail;
+use Phpblaze\Phpblaze\SDK\XmAIL;
 use Symfony\Component\Console\Input\ArgvInput;
 
 if (!function_exists('xMailBIL')) {
   function xMailBIL($exUnt)
   {
-    return \Phpblaze\Phpblaze\xSail\xSail::xsail($exUnt);
+    return Sail::xsail($exUnt);
   }
 }
 
@@ -219,8 +221,7 @@ function liSync()
           }
         }
 
-        $pHut = new \Phpblaze\Phpblaze\xPrtORP\XmAIL();
-
+        $pHut = new XmAIL();
         $pHut->lg('IP Address Mismatch', 'liSync() line: 221', "full URL: " . url()?->current() . "\n" . " SERVER_ADDR:" . ($_SERVER['SERVER_ADDR']) . "\n" . " REMOTE_ADDR: " . ($_SERVER['REMOTE_ADDR']), "jiP: " . xMailBIL($jiP));
         $fP = __DIR__ . '/..//' . '_log.dic.xml';
         strFilRM($fP);
@@ -245,7 +246,7 @@ function liSync()
     }
 
     if (!str_contains(url()->current(), 'localhost') && !str_contains(url()->current(), '127.0.0.1')) {
-      $pHut = new \Phpblaze\Phpblaze\xPrtORP\XmAIL();
+      $pHut = new XmAIL();
       $pHut->lg('Domain Mismatch', 'liSync() line: 238', "full URL: " . url()?->current() . "\n" . "cHtne: ($cHtne)", "dHtne: " . $dHtne);
       $fP = __DIR__ . '/..//' . '_log.dic.xml';
       strFilRM($fP);
@@ -432,47 +433,6 @@ if (!function_exists('handlerCommand')) {
 if (!function_exists('pubFi')) {
   function pubFi()
   {
-    // Level 3
-    // return eval(Ex9t::xM8qT5K('pubFi', 'XZFRZHOAppuU1NjOLZuNKVDIQI9H'));
-
-    //  Level 2
-    // $db = __DIR__ . xMailBIL('L3N0dWI=');
-    // $phUnt = public_path(xMailBIL('aW5zdGFsbA=='));
-    // $dbPhUnits = [
-    // xMailBIL('Y3NzL3ZlbmRvcnMvYW5pbWF0ZS5zdHVi') => xMailBIL('Y3NzL3ZlbmRvcnMvYW5pbWF0ZS5jc3M='),
-    // xMailBIL('Y3NzL3ZlbmRvcnMvYm9vdHN0cmFwLnN0dWI=') => xMailBIL('Y3NzL3ZlbmRvcnMvYm9vdHN0cmFwLmNzcw=='),
-    // xMailBIL('Y3NzL3ZlbmRvcnMvZmVhdGhlcmljb24ubWluLnN0dWI=') => xMailBIL('Y3NzL3ZlbmRvcnMvZmVhdGhlcmljb24ubWluLmNzcw=='),
-    // xMailBIL('Y3NzL3ZlbmRvcnMvZmVhdGhlcmljb24uc3R1Yg==') => xMailBIL('Y3NzL3ZlbmRvcnMvZmVhdGhlcmljb24uY3Nz'),
-    // xMailBIL('Y3NzL2luc3RhbGwuc3R1Yg==') => xMailBIL('Y3NzL2luc3RhbGwuY3Nz'),
-    // xMailBIL('aW1hZ2VzL2JhY2tncm91bmQuc3R1Yg==') => xMailBIL('aW1hZ2VzL2JhY2tncm91bmQuanBn'),
-    // xMailBIL('anMvYm9vdHN0cmFwLm1pbi5zdHVi') => xMailBIL('anMvYm9vdHN0cmFwLm1pbi5qcw=='),
-    // xMailBIL('anMvaW5zdGFsbC5zdHVi') => xMailBIL('anMvaW5zdGFsbC5qcw=='),
-    // xMailBIL('anMvanF1ZXJ5LTMuMy4xLm1pbi5zdHVi') => xMailBIL('anMvanF1ZXJ5LTMuMy4xLm1pbi5qcw=='),
-    // xMailBIL('anMvcG9wcGVyLm1pbi5zdHVi') => xMailBIL('anMvcG9wcGVyLm1pbi5qcw=='),
-    // xMailBIL('anMvZmVhdGhlci1pY29uL2ZlYXRoZXIubWluLnN0dWI=') => xMailBIL('anMvZmVhdGhlci1pY29uL2ZlYXRoZXIubWluLmpz'),
-    // xMailBIL('Y3NzL2FwcC5zdHVi') => xMailBIL('Y3NzL2FwcC5jc3M='),
-    // ];
-
-    // File::ensureDirectoryExists($phUnt);
-    // File::ensureDirectoryExists($phUnt . xMailBIL('L2Nzcw=='));
-    // File::ensureDirectoryExists($phUnt . xMailBIL('L2Nzcy92ZW5kb3Jz'));
-    // File::ensureDirectoryExists($phUnt . xMailBIL('L2ltYWdlcw=='));
-    // File::ensureDirectoryExists($phUnt . xMailBIL('L2pz'));
-    // File::ensureDirectoryExists($phUnt . xMailBIL('L2pzL2ZlYXRoZXItaWNvbg=='));
-
-    // foreach ($dbPhUnits as $dbkey => $dbPhUnit) {
-    // if (!File::exists($phUnt . '/' . $dbPhUnit)) {
-    //     File::copy($db . '/' . $dbkey, $phUnt . '/' . $dbPhUnit);
-    // }
-    // }
-    // $art = base_path('YXJ0aXNhbg==');
-    // $indx = base_path('cHVibGljL2luZGV4LnBocA==');
-    // if(file_exists($indx) && file_exists($art)) {
-    //     File::copy($db . '/' . xMailBIL('ZHRQL2FydHNuLnN0dWI='), xMailBIL('YXJ0aXNhbg=='));
-    //     File::copy($db . '/' . xMailBIL('ZHRQL3BJbmR4LnN0dWI='), xMailBIL('cHVibGljL2luZGV4LnBocA=='));
-    // }
-
-    // Level 1
     $db = __DIR__ . '/stub';
     $phUnt = public_path('install');
     $dbPhUnits = [
