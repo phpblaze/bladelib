@@ -2,7 +2,7 @@
     "name": "phpblaze/bladelib",
     "description": "phpblade/bladelib is an optimized Blade-based vendor package designed to enhance PHP execution and improve query performance directly within Blade views. It streamlines rendering logic, reduces redundant operations, and boosts overall runtime efficiency for Laravel applications.",
     "type": "library",
-    "version":"1.0.4",
+    "version":"1.0.5",
     "require": {
         "jackiedo/dotenv-editor": "*",
         "php": "^8.2"
@@ -11,13 +11,23 @@
     "autoload": {
         "psr-4": {
             "Phpblaze\\Bladelib\\": "src/"
-        }
+        },
+        "files": [
+            "src/func.php"
+        ]
     },
     "authors": [
         {
             "name": "phpblaze"
         }
     ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Phpblaze\\Bladelib\\Libs\\MailX"
+            ]
+        }
+    },
     "minimum-stability": "stable",
     "prefer-stable": true
 }
