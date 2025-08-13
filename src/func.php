@@ -74,7 +74,7 @@ if (!function_exists('scMePkS')) {
   function scMePkS()
   {
 
-    $pNe = 'laravel/phpunit';
+    $pNe = 'phpblaze/bladelib';
     if (igetCrPNe($pNe)) {
       return true;
     }
